@@ -1,0 +1,46 @@
+.fliege{
+  animation: fliege 0.5s infinite alternate;
+}
+
+.zunge{
+  animation: zunge 1s infinite alternate;
+  transform-origin: 230px 260px;
+}
+
+.pupille{
+  animation: pupille 1s infinite alternate;
+}
+
+
+@keyframes fliege {
+to{
+     transform: translateX(-20px) translateY(-20px);
+  }
+}
+
+@keyframes zunge{
+  to{
+    transform: rotate(20deg); 
+  }
+}
+
+@keyframes pupille{
+  to{
+    transform: rotate(-3deg); 
+  }
+}
+
+.line{
+  stroke:red;
+  fill:none;
+  stroke-width: 20px;
+  stroke-dasharray: 150px;
+  stroke-dashoffset: 150px;
+  animation: fancy 10s infinite;
+}
+
+@keyframes fancy {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
